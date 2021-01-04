@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Point {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter a point with two coordonates: ");
+		float x = input.nextFloat();
+		float y = input.nextFloat();
+		if ((x*x + y*y) > 100) {
+			System.out.println("Point (" + (int)(x*10)/10.0 + "," + (int)(y*10)/10.0
+			+") is not in the circle");
+		}
+		else System.out.println("Point (" + (int)(x*10)/10.0 + "," + (int)(y*10)/10.0
+				+") is in the circle");
+
+	}
+
+}
