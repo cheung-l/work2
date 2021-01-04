@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class SanJiaoXing {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.print("请输入三角形三条边长： ");
+		int a = input.nextInt();
+		int b = input.nextInt();
+		int c = input.nextInt();
+		int perimeter = a + b + c;
+		if(a<b+c&&b<a+c&&c<a+b) {
+			System.out.println("三角形的周长为： " + perimeter);
+		}
+		else System.out.println("输入值不合法");
+		
+	}
+
+}
