@@ -1,0 +1,31 @@
+import java.util.Random;
+public class Game {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random rand = new Random();
+		int x = rand.nextInt(13)+1;
+		int y = rand.nextInt(4);
+		String card;
+		String num = "NULL";
+		if(y==0) {
+			card = "Clubs";
+		}
+		else if(y==1) {
+			card = "Diamonds";
+		}
+		else if(y==2) {
+			card = "Hearts";
+		}
+		else card = "Spades";
+		if(x==1) num = "Ace";
+		else if(x==11) num = "Jack";
+		else if(x==12) num = "Queen";
+		else if(x==13) num = "King";
+		if(x > 1 && x < 11) {
+			System.out.println("The card you pick is " + x + " of " + card);
+		}
+		else System.out.println("The card you pick is " + num + " of " + card);
+	}
+
+}
